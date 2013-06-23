@@ -1,0 +1,14 @@
+.container-narrow {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.alert {
+	display : none;
+}
+
+#footer {
+	margin-top: 130px;
+	background-color: #ECECEC;
+	padding: 20px;
+}
