@@ -29,12 +29,14 @@ define(['util/constants'], function(Constants) {
 	        		}
         		}
         	}
+            console.log(output);
 			return output.slice(0, 5);        	
         }
 
     };
 
-    function addToOutput(output, pageToInsert, weight) {
+    function addToOutput(output, page, weight) {
+        var pageToInsert = {page: page.page.clone(), weight: page.weight};
     	pageToInsert.weight *= weight;
     	var itemIndex = contains(output, pageToInsert);
     	if(itemIndex != -1) {

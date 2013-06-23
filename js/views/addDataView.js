@@ -48,6 +48,8 @@ define(['jquery', 'underscore', 'backbone', 'text!templates/addData.html', 'mode
 			new Store('Page')._clear();
 			new Store('Query')._clear();
 			Constants.VENT.trigger(Constants.EVENTS.DATA_CLEARED);
+			this.queryCount = 0;
+			this.pageCount = 0;
 			console.log('All queries and pages cleared.');
 		}
     });
