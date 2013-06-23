@@ -50,6 +50,7 @@ define(['jquery', 'underscore', 'backbone', 'text!templates/addData.html', 'mode
 			Constants.VENT.trigger(Constants.EVENTS.DATA_CLEARED);
 			this.queryCount = 0;
 			this.pageCount = 0;
+			Constants.KEYWORD_PAGE_INDEX = {};
 			console.log('All queries and pages cleared.');
 		}
     });
