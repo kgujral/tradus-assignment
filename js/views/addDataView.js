@@ -83,7 +83,6 @@ define(['jquery', 'underscore', 'backbone', 'text!templates/addData.html', 'mode
 
     function extractKeywords(data) {
     	data = data.substring(2).trim().replace( /\s\s+/g, ' ' );
-    	console.log(data+".");
     	return data.split(Constants.TEXT.DELIMITER);
     }
 //	end of private functions

@@ -29,7 +29,6 @@ define(['util/constants'], function(Constants) {
 	        		}
         		}
         	}
-            console.log(output);
 			return output.slice(0, 5);        	
         }
 
